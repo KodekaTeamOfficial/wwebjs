@@ -51,15 +51,19 @@ Proyek ini adalah API sederhana untuk mengirim dan menerima pesan WhatsApp mengg
 ## Struktur Proyek
 ```
 whatsapp-api/
-├── src/
-│   ├── routes/
-│   │   └── whatsapp.js
-│   ├── services/
-│   │   └── whatsappService.js
-│   └── app.js
-├── .env
+├── config/
+│   └── config.js
+├── controllers/
+│   └── WhatsAppController.js
+├── services/
+│   └── WhatsAppService.js
+├── middleware/
+│   └── auth.js
+├── routes/
+│   └── whatsapp.js
 ├── package.json
-└── README.md
+├── .env
+└── index.js
 ```
 
 ## Endpoint API
