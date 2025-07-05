@@ -18,8 +18,8 @@ Proyek ini adalah API sederhana untuk mengirim dan menerima pesan WhatsApp mengg
 ## Instalasi
 1. **Clone repositori ini**:
    ```bash
-   git clone https://github.com/username/whatsapp-api.git
-   cd whatsapp-api
+   git clone https://github.com/KodekaTeamOfficial/wwebjs
+   cd wwebjs
    ```
 
 2. **Instal dependensi**:
@@ -31,6 +31,7 @@ Proyek ini adalah API sederhana untuk mengirim dan menerima pesan WhatsApp mengg
    Buat file `.env` di root proyek dan tambahkan konfigurasi berikut:
    ```env
    PORT=3000
+   API_KEY= xxxxxxxxxxxxxxxxxxxx
    ```
 
 ## Cara Menjalankan
@@ -40,7 +41,7 @@ Proyek ini adalah API sederhana untuk mengirim dan menerima pesan WhatsApp mengg
    ```
 
 2. **Autentikasi WhatsApp**:
-   - Setelah menjalankan aplikasi, buka terminal untuk melihat QR Code.
+   - Setelah menjalankan aplikasi, buka terminal/akses via browser untuk melihat QR Code.
    - Scan QR Code menggunakan aplikasi WhatsApp di ponsel Anda.
    - Sesi akan tersimpan untuk penggunaan berikutnya.
 
@@ -50,7 +51,7 @@ Proyek ini adalah API sederhana untuk mengirim dan menerima pesan WhatsApp mengg
 
 ## Struktur Proyek
 ```
-whatsapp-api/
+wwebjs/
 ├── config/
 │   └── config.js
 ├── controllers/
@@ -68,7 +69,7 @@ whatsapp-api/
 
 ## Endpoint API
 ### 1. Mengirim Pesan
-- **URL**: `/api/send-message`
+- **URL**: `/api/whatsapp/send-message`
 - **Method**: `POST`
 - **Body**:
   ```json
@@ -85,7 +86,7 @@ whatsapp-api/
   }
   ```
 
-### 2. Mendapatkan Pesan Masuk
+<!-- ### 2. Mendapatkan Pesan Masuk
 - **URL**: `/api/messages`
 - **Method**: `GET`
 - **Response**:
@@ -97,7 +98,7 @@ whatsapp-api/
       "timestamp": "2025-07-05T14:30:00Z"
     }
   ]
-  ```
+  ``` -->
 
 ## Dependensi
 - [whatsapp-web.js](https://www.npmjs.com/package/whatsapp-web.js): Pustaka untuk berinteraksi dengan WhatsApp Web.
@@ -105,15 +106,15 @@ whatsapp-api/
 - [dotenv](https://www.npmjs.com/package/dotenv): Mengelola variabel lingkungan.
 - [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal): Menampilkan QR Code di terminal.
 
-## Kontribusi
+<!-- ## Kontribusi
 1. Fork repositori ini.
 2. Buat branch baru: `git checkout -b fitur-baru`.
 3. Commit perubahan: `git commit -m 'Menambahkan fitur baru'`.
 4. Push ke branch: `git push origin fitur-baru`.
-5. Buat Pull Request.
+5. Buat Pull Request. -->
 
 ## Lisensi
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
-## Kontak
-Jika Anda memiliki pertanyaan atau saran, hubungi melalui [email@example.com](mailto:email@example.com).
+<!-- ## Kontak
+Jika Anda memiliki pertanyaan atau saran, hubungi melalui [email@example.com](mailto:email@example.com). -->
